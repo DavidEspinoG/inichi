@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --blue: #120435;
   --yellow: #fbb728;
 }
@@ -18,10 +18,13 @@ body {
 }
 
 .hamburger-menu {
-  color: var(--yellow);
   font-size: 30px;
 }
 
 .hamburger-menu:hover {
   transform: scale(1.1);
 }
+
+.border-bottom {
+  border-bottom: 1px solid white; 
+} */

@@ -6,9 +6,11 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className='container relative'>
-      <Menu /> 
+      <div className='bg-blue p-8'>
+        <Menu /> 
+      </div>
       <Outlet />
-      <Footer /> 
+      {/* <Footer />  */}
     </div>
   )
 }

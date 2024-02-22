@@ -15,23 +15,17 @@ const Menu = () => {
 
   return (
     <>
-      <div className='flex justify-between py-3'>
-        <div className='flex justify-center w-full'>
-        </div>
-        <div className="text-sand">
-          {isModalOpen ? 
-            <IoMdClose className='hamburger-menu'
-              onClick={closeModal}
-            /> :
-            <RxHamburgerMenu 
-              className='hamburger-menu'
-              onClick={openModal}
-            />
-          }
-          
-        </div>
+      <div className="text-sand text-[30px]">
+        {isModalOpen ? 
+          <IoMdClose
+            onClick={closeModal}
+          /> :
+          <RxHamburgerMenu
+            onClick={openModal}
+          />
+        }
       </div>
-      {isModalOpen && <Modal closeModal={closeModal}/>}
+      {/* {isModalOpen && <Modal closeModal={closeModal}/>} */}
     </>
   );
 };

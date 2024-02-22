@@ -28,3 +28,7 @@ body {
 .border-bottom {
   border-bottom: 1px solid white; 
 } */
+
+.custom-calc {
+  height: calc(100vh - 94px);
+}

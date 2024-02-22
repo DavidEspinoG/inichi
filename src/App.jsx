@@ -10,7 +10,7 @@ function App() {
         <Menu /> 
       </div>
       <Outlet />
-      {/* <Footer />  */}
+      <Footer /> 
     </div>
   )
 }

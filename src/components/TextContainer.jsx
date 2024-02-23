@@ -1,14 +1,14 @@
 import { useState } from "react";
 import gear from '../assets/gear.png';
 
-const TextContainer = ({title, baseText, additionalText, variant}) => {
+const TextContainer = ({title, baseText, additionalText, variant, id}) => {
   const [ show, setShow ] = useState(false);
   const variants = {
     sand: {bg: 'bg-sand', text: 'text-olive', title: 'text-olive'},
     blue: {bg: 'bg-blue', text: 'text-white font-thin', title: 'text-olive'}
   }
   return(
-    <div className={`${variants[variant].bg} text-center p-7`}>
+    <div className={`${variants[variant].bg} text-center p-7`} id={id ? id : null}>
       {variant === 'blue' ?
         <div className="text-center flex justify-between items-center mb-7">
           <div className="text-center basis-11/12">

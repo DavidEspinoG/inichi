@@ -9,9 +9,10 @@ export default {
     colors: {
       yellow: '#fbb728',
       white: '#ffffff',
-      blue: '#120435', 
+      blue: '#002245', 
       sand: '#e3ded5',
       olive: '#78989d',
+      ligthBlue: '#049DBF',
     }
   },
   plugins: [],

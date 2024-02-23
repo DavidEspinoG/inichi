@@ -12,7 +12,8 @@ const Home = () => {
         <p className="text-sand text-center">INICHI CUENTA CON EXCELENCIA, INNOVACION, TRABAJO EN CONJUNTO, COLABORATIVO, ETICO, TRANSPARENCIA Y RESPONSABILIDAD.</p>
         <div className="flex justify-center">
           <Link
-            to='about' 
+            to='about'
+            onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} 
             className="text-olive bg-sand p-2 text-center w-[130px]">
               Conoce más
           </Link>

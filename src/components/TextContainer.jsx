@@ -9,10 +9,18 @@ const TextContainer = ({title, baseText, additionalText, variant}) => {
   }
   return(
     <div className={`${variants[variant].bg} text-center p-7`}>
-      <div className="text-center relative mb-5">
-        <h1 className={`${variants[variant].title} uppercase text-2xl`}>{title}</h1>
-        {variant === 'blue' && <img src={gear} className="size-10 absolute top-0 right-0"/>}
-      </div>
+      {variant === 'blue' ?
+        <div className="text-center flex justify-between items-center mb-7">
+          <div className="text-center basis-11/12">
+            <h1 className={`${variants[variant].title} uppercase text-2xl`}>{title}</h1>
+          </div>
+          <img src={gear} className="size-10"/>
+        </div> : 
+        <div className="text-center mb-7">
+            <h1 className={`${variants[variant].title} uppercase text-2xl`}>{title}</h1>
+        </div>  
+      }
+      
       <p className={`${variants[variant].text}`}>{baseText}</p>
       {(!show && additionalText) && 
       <p 
@@ -21,7 +29,7 @@ const TextContainer = ({title, baseText, additionalText, variant}) => {
       >Ver más</p>
       }
       {(show && additionalText) &&
-      additionalText.map((item) => (<p className={`${variants[variant].text} mt-3 font-thin`}>{item}</p>))
+      additionalText.map((item) => (<p key={item} className={`${variants[variant].text} mt-3 font-thin`}>{item}</p>))
       }
       {show && 
       <p 

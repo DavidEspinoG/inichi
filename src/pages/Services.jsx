@@ -7,12 +7,12 @@ const Services = () => {
       <div className="bg-sand pt-5 pb-5">
         <h1 className="text-olive uppercase text text-2xl text-center mb-5">Catálogo de servicios</h1>
         <div className="flex flex-col justify-evenly items-center gap-5">
-          <a className="text-olive uppercase text-xl">servicio especializado</a>
-          <a className="text-olive uppercase text-xl">desarrollo ti</a>
-          <a className="text-olive uppercase text-xl">fabrica de software</a>
-          <a className="text-olive uppercase text-xl">headhunting</a>
-          <a className="text-olive uppercase text-xl">ciberseguridad</a>
-          <a className="text-olive uppercase text-xl">servicio en la nube</a>
+          <Link to='/services/#servicio_especializado' className="text-olive uppercase text-xl" reloadDocument >servicio especializado</Link>
+          <Link to='/services/#desarrollo_ti' className="text-olive uppercase text-xl" reloadDocument>desarrollo ti</Link>
+          <Link to='/services/#fabrica' className="text-olive uppercase text-xl" reloadDocument>fabrica de software</Link>
+          <Link to='/services/#headhunting' className="text-olive uppercase text-xl" reloadDocument>headhunting</Link>
+          <Link to='/services/#cyber' className="text-olive uppercase text-xl" reloadDocument>ciberseguridad</Link>
+          <Link to='/services/#cloud' className="text-olive uppercase text-xl" reloadDocument>servicio en la nube</Link>
         </div>
       </div>
       <TextContainer 
@@ -23,6 +23,7 @@ const Services = () => {
           'Contamos con un equipo altamente calificado para que puedan seleccionar a la mejor calidad de personal teniendo las características mas avanzadas para la selección, para que así los mejores prospectos cumplan todas la características y necesidades que nos soliciten.',
           'Nos concentramos en encontrar candidatos con las mejores habilidades, así como la mejor colaboración en equipo e individual en un tiempo récord.'
         ]}
+        id='servicio_especializado'
       />
       <div>
         <img src={img2}/>
@@ -35,6 +36,7 @@ const Services = () => {
           'Tecnología: Te proporcionamos la última tecnología, adaptada a tus requerimientos.INICHI es un conjunto de profesionales con amplia experiencia en Tecnologías de la Información.',
           'INICHI ofrece un riguroso sistema en el proceso de reclutamiento y selección de personal.', 
         ]}
+        id='desarrollo_ti'
       />
       <div>
         <img src={img2}/>
@@ -48,6 +50,7 @@ const Services = () => {
           'Trabajamos con todo tipo de plataformas, en servidores podemos ofrecerle soluciones montadas sobre Linux o cualquier otra variante de Unix, incluso si así lo requiere podemos montar soluciones sobre Windows.',
           ' En plataformas de desarrollo podemos ofrecerle desarrollos en cualquier lenguaje de desarrollo. Si las necesidades son aplicaciones para dispositivos móviles podemos ofrecerle desarrollos para dispositivos con sistema operativo Android y iOS.' 
         ]}
+        id='fabrica'
       />
       <div>
         <img src={img2}/>
@@ -60,6 +63,7 @@ const Services = () => {
           'Desde las etapas involucradas hasta la distinción entre headhunters y reclutadores, nos sumergimos en un mundo de estrategias y secretos detrás de la adquisición de los mejores talentos en el mercado laboral.',
           'Nosotros ofrecemos el encontrar a los mejores profesionales, contamos con un servicio de reclutamiento y de procesos de búsquedas especializadas de profesionales en TI.'
         ]}
+        id='headhunting'
       />
       <div>
         <img src={img2}/>
@@ -72,6 +76,7 @@ const Services = () => {
           'En la actualidad, la adopción de medidas de seguridad digital es fundamental debido al incremento en el número de dispositivos conectados, superando incluso la cantidad de personas y a la creciente creatividad de los atacantes.',
           'Nuestro equipo cuenta con grandes expertos en ciberseguridad los cuales su empresa estará completamente tranquila de cualquier tipo de ataque cibernético. Ya que contamos con la prevención, la solución y análisis de cualquier riesgo.'
         ]}
+        id='cyber'
       />
       <TextContainer 
         title='Servicio en la nube'
@@ -82,6 +87,7 @@ const Services = () => {
           '2.	Ahorro de costos: Al utilizar servicios basados en la nube, las organizaciones evitan los costos iniciales asociados con la compra y el mantenimiento de servidores y software propios. Además, el modelo de pago por uso en la nube puede reducir los costos generales.',
           '3.	Accesibilidad y colaboración: La nube permite a los usuarios acceder a sus datos y aplicaciones desde cualquier lugar con conexión a Internet. Esto facilita la colaboración y el trabajo remoto.'
         ]}
+        id='cloud'
       />
     </>
   )

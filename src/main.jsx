@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import {
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import About from './pages/About.jsx';
@@ -11,7 +11,7 @@ import Contact from './pages/Contact.jsx';
 import Services from './pages/Services.jsx';
 import Home from './pages/Home.jsx';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,

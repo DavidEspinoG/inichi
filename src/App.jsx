@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className='container relative'>
+    <div className='relative'>
       <div className='bg-blue p-8'>
         <Menu /> 
       </div>

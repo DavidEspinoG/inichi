@@ -8,6 +8,7 @@ const Menu = () => {
   const [ isModalOpen, setIsModalOpen ] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
+    setTimeout(() => setIsModalOpen(false), 5000)
   };
   const closeModal = () => {
     setIsModalOpen(false);
@@ -25,7 +26,7 @@ const Menu = () => {
           />
         }
       </div>
-      {/* {isModalOpen && <Modal closeModal={closeModal}/>} */}
+      {isModalOpen && <Modal closeModal={closeModal}/>}
     </>
   );
 };

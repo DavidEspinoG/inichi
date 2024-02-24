@@ -5,11 +5,11 @@ const Footer = () => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
   };
     return (
-      <div className="bg-sand flex flex-col items-center justify-evenly gap-5 p-3">
-        <Link to='/' className="text-olive uppercase text-lg" onClick={scrollToTop}>Inicio</Link>
-        <Link to='about'  className="text-olive uppercase text-lg" onClick={scrollToTop}>Nosotros</Link>
-        <Link to='services' className="text-olive uppercase text-lg" onClick={scrollToTop}>Servicios</Link>
-        <Link to='contact' className="text-olive uppercase text-lg" onClick={scrollToTop}>Contáctanos</Link>
+      <div className="bg-sand flex flex-col text-lg items-center justify-evenly gap-5 p-3 md:flex-row md:h-[150px] md:text-xl ">
+        <Link to='/' className="text-olive uppercase " onClick={scrollToTop}>Inicio</Link>
+        <Link to='about'  className="text-olive uppercase " onClick={scrollToTop}>Nosotros</Link>
+        <Link to='services' className="text-olive uppercase" onClick={scrollToTop}>Servicios</Link>
+        <Link to='contact' className="text-olive uppercase" onClick={scrollToTop}>Contáctanos</Link>
       </div>
     )
 };

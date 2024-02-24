@@ -1,20 +1,28 @@
 import TextContainer from "../components/TextContainer";
 import img2 from '../assets/img2.png';
+import img1 from '../assets/img1.png';
 import { Link } from "react-router-dom";
+
 const Services = () => {
   return (
     <>
-      <div className="bg-sand pt-5 pb-5">
-        <h1 className="text-olive uppercase text text-2xl text-center mb-5">Catálogo de servicios</h1>
-        <div className="flex flex-col justify-evenly items-center gap-5">
-          <Link to='/services/#servicio_especializado' className="text-olive uppercase text-xl" reloadDocument >servicio especializado</Link>
-          <Link to='/services/#desarrollo_ti' className="text-olive uppercase text-xl" reloadDocument>desarrollo ti</Link>
-          <Link to='/services/#fabrica' className="text-olive uppercase text-xl" reloadDocument>fabrica de software</Link>
-          <Link to='/services/#headhunting' className="text-olive uppercase text-xl" reloadDocument>headhunting</Link>
-          <Link to='/services/#cyber' className="text-olive uppercase text-xl" reloadDocument>ciberseguridad</Link>
-          <Link to='/services/#cloud' className="text-olive uppercase text-xl" reloadDocument>servicio en la nube</Link>
+      <div className="md:flex md:justify-between ">
+        <div className="bg-sand pt-5 pb-5 basis-2/4">
+          <div className="flex flex-col justify-evenly items-center gap-5 h-full">
+            <h1 className="text-olive uppercase text text-2xl text-center">Catálogo de servicios</h1>
+            <Link to='/services/#servicio_especializado' className="text-olive uppercase text-xl" reloadDocument >servicio especializado</Link>
+            <Link to='/services/#desarrollo_ti' className="text-olive uppercase text-xl" reloadDocument>desarrollo ti</Link>
+            <Link to='/services/#fabrica' className="text-olive uppercase text-xl" reloadDocument>fabrica de software</Link>
+            <Link to='/services/#headhunting' className="text-olive uppercase text-xl" reloadDocument>headhunting</Link>
+            <Link to='/services/#cyber' className="text-olive uppercase text-xl" reloadDocument>ciberseguridad</Link>
+            <Link to='/services/#cloud' className="text-olive uppercase text-xl" reloadDocument>servicio en la nube</Link>
+          </div>
+        </div>
+        <div className="hidden md:block basis-2/4 ">
+          <img src={img1} className="max-w-full object-cover bg-fit h-full"/>
         </div>
       </div>
+      
       <TextContainer 
         title='Servicio especializado'
         variant='blue'
@@ -25,8 +33,8 @@ const Services = () => {
         ]}
         id='servicio_especializado'
       />
-      <div>
-        <img src={img2}/>
+      <div className="myBackground">
+        {/* <img src={img2} className="myImage"/> */}
       </div>
       <TextContainer 
         title='Desarrollo ti'
@@ -38,8 +46,8 @@ const Services = () => {
         ]}
         id='desarrollo_ti'
       />
-      <div>
-        <img src={img2}/>
+      <div className="myBackground">
+        {/* <img src={img2}/> */}
       </div>
       <TextContainer 
         title='Fábrica de software'
@@ -52,8 +60,8 @@ const Services = () => {
         ]}
         id='fabrica'
       />
-      <div>
-        <img src={img2}/>
+      <div className="myBackground">
+        {/* <img src={img2}/> */}
       </div>
       <TextContainer 
         title='Headhunting'
@@ -65,8 +73,8 @@ const Services = () => {
         ]}
         id='headhunting'
       />
-      <div>
-        <img src={img2}/>
+      <div className="myBackground">
+        {/* <img src={img2}/> */}
       </div>
       <TextContainer 
         title='Ciberseguridad'

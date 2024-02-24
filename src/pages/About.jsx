@@ -20,8 +20,8 @@ const About = () => {
         baseText='Crear soluciones innovadoras en tecnología de información, proporcionando a nuestros clientes la excelencia en medios confiables para optimizar sus procesos.'
         additionalText={['Ampliar la competitividad y triunfo de nuestros clientes mediante la gestión, diseño, evolución y ejecución de soluciones y servicios de tecnologías de la información; así como cumplir y superar las exigencias de TI de nuestros clientes convirtiéndolos en resultados.']}
       />
-      <div>
-        <img src={img2}/>
+      <div className='myBackground'>
+        {/* <img src={img2}/> */}
       </div>
       <TextContainer 
         variant='blue'

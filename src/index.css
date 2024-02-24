@@ -3,15 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
- :root {
-  --blue: #120435;
-  --yellow: #fbb728;
+.myImage {
+  max-width: 500px;
 }
 
-
-.custom-calc {
-  height: calc(100vh - 94px);
+.myBackground {
+  background-image: url('./assets/img2.png');
+  height: 400px;
 }
-
-*/ 
